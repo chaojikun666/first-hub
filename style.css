@@ -99,3 +99,40 @@ h1 {
     object-fit: cover;
     margin-bottom: 20px;
 }
+
+
+/* ========== 暗色模式 ========== */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #12161a;
+    }
+
+    .card {
+        background-color: #1c2228;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+        color: #f2f2f2;
+    }
+
+    .role {
+        color: #a8b0b8;
+    }
+
+    .skills {
+        color: #6f7a84;
+        border-top-color: #2c3439;
+    }
+
+    .contact a {
+        color: #cfd6dc;
+        border-color: #3a444b;
+    }
+
+    .contact a:hover {
+        color: #12161a;
+        background-color: #f2f2f2;
+        border-color: #f2f2f2;
+    }
+}
