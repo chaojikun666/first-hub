@@ -117,6 +117,25 @@ h1 {
     border-color: var(--btn-hover-bg);
 }
 
+/* ========== 主题切换按钮 ========== */
+.theme-toggle {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-family: inherit;
+    color: var(--text-sub);
+    background-color: transparent;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.theme-toggle:hover {
+    color: var(--text);
+    border-color: var(--text-dim);
+}
+
 /* ========== 手机适配 ========== */
 @media (max-width: 520px) {
     .card {
@@ -135,22 +154,20 @@ h1 {
     }
 }
 
-/* ========== 暗色模式 ========== */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #12161a;
-        --card-bg: #1c2228;
-        --text: #f2f2f2;
-        --text-sub: #a8b0b8;
-        --text-dim: #6f7a84;
-        --text-body: #b6bec6;
-        --line: #2c3439;
+/* ========== 深色模式（手动切换） ========== */
+:root.dark {
+    --bg: #12161a;
+    --card-bg: #1c2228;
+    --text: #f2f2f2;
+    --text-sub: #a8b0b8;
+    --text-dim: #6f7a84;
+    --text-body: #b6bec6;
+    --line: #2c3439;
 
-        --btn-text: #cfd6dc;
-        --btn-line: #3a444b;
-        --btn-hover-bg: #f2f2f2;
-        --btn-hover-text: #12161a;
+    --btn-text: #cfd6dc;
+    --btn-line: #3a444b;
+    --btn-hover-bg: #f2f2f2;
+    --btn-hover-text: #12161a;
 
-        --shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    }
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
